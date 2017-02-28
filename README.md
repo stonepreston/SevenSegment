@@ -1,2 +1,2 @@
 # SevenSegment
-An Arduino library for the YSD-439AB4B-35 7-Segment display
+An Arduino library for the ATA8041AB 7-Segment display
