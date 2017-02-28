@@ -59,36 +59,37 @@ class SevenSegment {
 		void setPinDP(int value);
 
 		// Letters
-		void a();
-		void b();
-		void c();
-		void c();
-		void d();
-		void e();
-		void f();
-		void h();
-		void i();
-		void j();
-		void l();
-		void n();
-		void o();
-		void p();
-		void r();
-		void s();
-		void u();
-		void y();
-		void z();
+		void a(bool decimalPoint);
+		void b(bool decimalPoint);
+		void c(bool decimalPoint);
+		void c(bool decimalPoint);
+		void d(bool decimalPoint);
+		void e(bool decimalPoint);
+		void f(bool decimalPoint);
+		void h(bool decimalPoint);
+		void i(bool decimalPoint);
+		void j(bool decimalPoint);
+		void l(bool decimalPoint);
+		void n(bool decimalPoint);
+		void o(bool decimalPoint);
+		void p(bool decimalPoint);
+		void r(bool decimalPoint);
+		void s(bool decimalPoint);
+		void u(bool decimalPoint);
+		void y(bool decimalPoint);
+		void z(bool decimalPoint);
 
 		// Numbers
-		void one();
-		void two();
-		void three();
-		void four();
-		void five();
-		void six();
-		void seven();
-		void eight();
-		void nine();
+		void zero(bool decimalPoint);
+		void one(bool decimalPoint);
+		void two(bool decimalPoint);
+		void three(bool decimalPoint);
+		void four(bool decimalPoint);
+		void five(bool decimalPoint);
+		void six(bool decimalPoint);
+		void seven(bool decimalPoint);
+		void eight(bool decimalPoint);
+		void nine(bool decimalPoint);
 
 		// Decimal point
 		void decimalPoint();

@@ -213,7 +213,7 @@ void SevenSegment::digitFour() {
 }
 
 // Letters
-void SevenSegment::a() {
+void SevenSegment::a(bool decimalPoint) {
 
 	digitalWrite(getPinA(), HIGH);
 	digitalWrite(getPinB(), HIGH);
@@ -222,11 +222,11 @@ void SevenSegment::a() {
 	digitalWrite(getPinE(), HIGH);
 	digitalWrite(getPinF(), HIGH);
 	digitalWrite(getPinG(), HIGH);
-	digitalWrite(getPinDP(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
 
 }
 
-void SevenSegment::b() {
+void SevenSegment::b(bool decimalPoint) {
 
 	digitalWrite(getPinA(), LOW);
 	digitalWrite(getPinB(), LOW);
@@ -235,11 +235,11 @@ void SevenSegment::b() {
 	digitalWrite(getPinE(), HIGH);
 	digitalWrite(getPinF(), HIGH);
 	digitalWrite(getPinG(), HIGH);
-	digitalWrite(getPinDP(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
 
 }
 
-void SevenSegment::c() {
+void SevenSegment::c(bool decimalPoint) {
 
 	digitalWrite(getPinA(), HIGH);
 	digitalWrite(getPinB(), LOW);
@@ -248,11 +248,11 @@ void SevenSegment::c() {
 	digitalWrite(getPinE(), HIGH);
 	digitalWrite(getPinF(), HIGH);
 	digitalWrite(getPinG(), LOW);
-	digitalWrite(getPinDP(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
 
 }
 
-void SevenSegment::c() {
+void SevenSegment::c(bool decimalPoint) {
 
 	digitalWrite(getPinA(), HIGH);
 	digitalWrite(getPinB(), LOW);
@@ -261,11 +261,11 @@ void SevenSegment::c() {
 	digitalWrite(getPinE(), HIGH);
 	digitalWrite(getPinF(), HIGH);
 	digitalWrite(getPinG(), LOW);
-	digitalWrite(getPinDP(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
 
 }
 
-void SevenSegment::d() {
+void SevenSegment::d(bool decimalPoint) {
 
 	digitalWrite(getPinA(), LOW);
 	digitalWrite(getPinB(), HIGH);
@@ -274,11 +274,11 @@ void SevenSegment::d() {
 	digitalWrite(getPinE(), HIGH);
 	digitalWrite(getPinF(), LOW);
 	digitalWrite(getPinG(), HIGH);
-	digitalWrite(getPinDP(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
 
 }
 
-void SevenSegment::e() {
+void SevenSegment::e(bool decimalPoint) {
 
 	digitalWrite(getPinA(), HIGH);
 	digitalWrite(getPinB(), LOW);
@@ -287,11 +287,11 @@ void SevenSegment::e() {
 	digitalWrite(getPinE(), HIGH);
 	digitalWrite(getPinF(), HIGH);
 	digitalWrite(getPinG(), HIGH);
-	digitalWrite(getPinDP(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
 
 }
 
-void SevenSegment::f() {
+void SevenSegment::f(bool decimalPoint) {
 
 	digitalWrite(getPinA(), HIGH);
 	digitalWrite(getPinB(), LOW);
@@ -300,11 +300,11 @@ void SevenSegment::f() {
 	digitalWrite(getPinE(), HIGH);
 	digitalWrite(getPinF(), HIGH);
 	digitalWrite(getPinG(), HIGH);
-	digitalWrite(getPinDP(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
 
 }
 
-void SevenSegment::h() {
+void SevenSegment::h(bool decimalPoint) {
 
 	digitalWrite(getPinA(), LOW);
 	digitalWrite(getPinB(), HIGH);
@@ -313,11 +313,11 @@ void SevenSegment::h() {
 	digitalWrite(getPinE(), HIGH);
 	digitalWrite(getPinF(), HIGH);
 	digitalWrite(getPinG(), HIGH);
-	digitalWrite(getPinDP(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
 
 }
 
-void SevenSegment::i() {
+void SevenSegment::i(bool decimalPoint) {
 
 	digitalWrite(getPinA(), LOW);
 	digitalWrite(getPinB(), LOW);
@@ -326,11 +326,11 @@ void SevenSegment::i() {
 	digitalWrite(getPinE(), HIGH);
 	digitalWrite(getPinF(), HIGH);
 	digitalWrite(getPinG(), LOW);
-	digitalWrite(getPinDP(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
 
 }
 
-void SevenSegment::j() {
+void SevenSegment::j(bool decimalPoint) {
 
 	digitalWrite(getPinA(), LOW);
 	digitalWrite(getPinB(), HIGH);
@@ -339,9 +339,263 @@ void SevenSegment::j() {
 	digitalWrite(getPinE(), LOW);
 	digitalWrite(getPinF(), LOW);
 	digitalWrite(getPinG(), LOW);
-	digitalWrite(getPinDP(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
 
 }
+
+void SevenSegment::l(bool decimalPoint) {
+
+	digitalWrite(getPinA(), LOW);
+	digitalWrite(getPinB(), LOW);
+	digitalWrite(getPinC(), LOW);
+	digitalWrite(getPinD(), HIGH);
+	digitalWrite(getPinE(), HIGH);
+	digitalWrite(getPinF(), HIGH);
+	digitalWrite(getPinG(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::n(bool decimalPoint) {
+
+	digitalWrite(getPinA(), LOW);
+	digitalWrite(getPinB(), LOW);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), LOW);
+	digitalWrite(getPinE(), HIGH);
+	digitalWrite(getPinF(), LOW);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::o(bool decimalPoint) {
+
+	digitalWrite(getPinA(), LOW);
+	digitalWrite(getPinB(), LOW);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), HIGH);
+	digitalWrite(getPinE(), HIGH);
+	digitalWrite(getPinF(), LOW);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::p(bool decimalPoint) {
+
+	digitalWrite(getPinA(), HIGH);
+	digitalWrite(getPinB(), HIGH);
+	digitalWrite(getPinC(), LOW);
+	digitalWrite(getPinD(), LOW);
+	digitalWrite(getPinE(), HIGH);
+	digitalWrite(getPinF(), HIGH);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::r(bool decimalPoint) {
+
+	digitalWrite(getPinA(), LOW);
+	digitalWrite(getPinB(), LOW);
+	digitalWrite(getPinC(), LOW);
+	digitalWrite(getPinD(), LOW);
+	digitalWrite(getPinE(), HIGH);
+	digitalWrite(getPinF(), LOW);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::s(bool decimalPoint) {
+
+	digitalWrite(getPinA(), HIGH);
+	digitalWrite(getPinB(), LOW);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), HIGH);
+	digitalWrite(getPinE(), LOW);
+	digitalWrite(getPinF(), HIGH);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::u(bool decimalPoint) {
+
+	digitalWrite(getPinA(), LOW);
+	digitalWrite(getPinB(), HIGH);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), HIGH);
+	digitalWrite(getPinE(), HIGH);
+	digitalWrite(getPinF(), HIGH);
+	digitalWrite(getPinG(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::y(bool decimalPoint) {
+
+	digitalWrite(getPinA(), LOW);
+	digitalWrite(getPinB(), HIGH);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), HIGH);
+	digitalWrite(getPinE(), LOW);
+	digitalWrite(getPinF(), HIGH);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::z(bool decimalPoint) {
+
+	digitalWrite(getPinA(), HIGH);
+	digitalWrite(getPinB(), HIGH);
+	digitalWrite(getPinC(), LOW);
+	digitalWrite(getPinD(), HIGH);
+	digitalWrite(getPinE(), HIGH);
+	digitalWrite(getPinF(), LOW);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+// Numbers
+
+void SevenSegment::zero(bool decimalPoint) {
+
+	digitalWrite(getPinA(), HIGH);
+	digitalWrite(getPinB(), HIGH);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), HIGH);
+	digitalWrite(getPinE(), HIGH);
+	digitalWrite(getPinF(), HIGH);
+	digitalWrite(getPinG(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::one(bool decimalPoint) {
+
+	digitalWrite(getPinA(), LOW);
+	digitalWrite(getPinB(), HIGH);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), LOW);
+	digitalWrite(getPinE(), LOW);
+	digitalWrite(getPinF(), LOW);
+	digitalWrite(getPinG(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::two(bool decimalPoint) {
+
+	digitalWrite(getPinA(), HIGH);
+	digitalWrite(getPinB(), HIGH);
+	digitalWrite(getPinC(), LOW);
+	digitalWrite(getPinD(), HIGH);
+	digitalWrite(getPinE(), HIGH);
+	digitalWrite(getPinF(), LOW);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::three(bool decimalPoint) {
+
+	digitalWrite(getPinA(), HIGH);
+	digitalWrite(getPinB(), HIGH);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), HIGH);
+	digitalWrite(getPinE(), LOW);
+	digitalWrite(getPinF(), LOW);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::four(bool decimalPoint) {
+
+	digitalWrite(getPinA(), LOW);
+	digitalWrite(getPinB(), HIGH);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), LOW);
+	digitalWrite(getPinE(), LOW);
+	digitalWrite(getPinF(), HIGH);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::five(bool decimalPoint) {
+
+	digitalWrite(getPinA(), HIGH);
+	digitalWrite(getPinB(), LOW);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), HIGH);
+	digitalWrite(getPinE(), LOW);
+	digitalWrite(getPinF(), HIGH);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::six(bool decimalPoint) {
+
+	digitalWrite(getPinA(), HIGH);
+	digitalWrite(getPinB(), LOW);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), HIGH);
+	digitalWrite(getPinE(), HIGH);
+	digitalWrite(getPinF(), HIGH);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::seven(bool decimalPoint) {
+
+	digitalWrite(getPinA(), HIGH);
+	digitalWrite(getPinB(), HIGH);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), LOW);
+	digitalWrite(getPinE(), LOW);
+	digitalWrite(getPinF(), LOW);
+	digitalWrite(getPinG(), LOW);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::eight(bool decimalPoint) {
+
+	digitalWrite(getPinA(), HIGH);
+	digitalWrite(getPinB(), HIGH);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), HIGH);
+	digitalWrite(getPinE(), HIGH);
+	digitalWrite(getPinF(), HIGH);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+void SevenSegment::nine(bool decimalPoint) {
+
+	digitalWrite(getPinA(), HIGH);
+	digitalWrite(getPinB(), HIGH);
+	digitalWrite(getPinC(), HIGH);
+	digitalWrite(getPinD(), LOW);
+	digitalWrite(getPinE(), LOW);
+	digitalWrite(getPinF(), HIGH);
+	digitalWrite(getPinG(), HIGH);
+	digitalWrite(getPinDP(), decimalPoint);
+
+}
+
+
+
+
+
 
 
 
