@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include "SevenSegment.h"
 
 // Default Constructor
 SevenSegment::SevenSegment() {
@@ -25,10 +26,7 @@ SevenSegment::SevenSegment() {
 // Overloaded Constructor
 SevenSegment::SevenSegment(int pinDigitOne, int pinDigitTwo, int pinDigitThree, int pinDigitFour, int pinA, int pinB, int pinC, int pinD, int pinE, int pinF, int pinG, int pinDP) {
 
-	// Initialize pins to default configuration
-	// Pins 1-4 are the digit selectors
-	// Pins 5-11 are segments a-g
-	// Pin 12 is the decimal point
+	// Initialize pins to a custom configuration
 	this->pinDigitOne = pinDigitOne;
 	this->pinDigitTwo = pinDigitTwo;
 	this->pinDigitThree = pinDigitThree;
@@ -41,6 +39,125 @@ SevenSegment::SevenSegment(int pinDigitOne, int pinDigitTwo, int pinDigitThree, 
 	this->pinF = pinF;
 	this->pinG = pinG;
 	this->pinDP = pinDP;
+
+}
+
+// Main display function
+void SevenSegment::display(int digit, char character, bool decimalPoint) {
+
+	// Select a digit to display a character at
+	switch (digit) {
+
+	case 1:
+		digitOne();
+		break;
+	case 2:
+		digitTwo();
+		break;
+	case 3:
+		digitThree();
+		break;
+	case 4:
+		digitFour();
+		break;
+	default:
+		digitOne();
+		break;
+
+	}
+
+	// Display a character
+	switch (character) {
+
+		case 'a':
+			a(decimalPoint);
+			break;
+		case 'b':
+			b(decimalPoint);
+			break;
+		case 'c':
+			c(decimalPoint);
+			break;
+		case 'd':
+			d(decimalPoint);
+			break;
+		case 'e':
+			e(decimalPoint);
+			break;
+		case 'f':
+			f(decimalPoint);
+			break;
+		case 'h':
+			h(decimalPoint);
+			break;
+		case 'i':
+			i(decimalPoint);
+			break;
+		case 'j':
+			j(decimalPoint);
+			break;
+		case 'l':
+			l(decimalPoint);
+			break;
+		case 'n':
+			n(decimalPoint);
+			break;
+		case 'o':
+			o(decimalPoint);
+			break;
+		case 'p':
+			p(decimalPoint);
+			break;
+		case 'r':
+			r(decimalPoint);
+			break;
+		case 's':
+			s(decimalPoint);
+			break;
+		case 'u':
+			u(decimalPoint);
+			break;
+		case 'y':
+			y(decimalPoint);
+			break;
+		case 'z':
+			z(decimalPoint);
+			break;
+		case '0':
+			zero(decimalPoint);
+			break;
+		case '1':
+			one(decimalPoint);
+			break;
+		case '2':
+			two(decimalPoint);
+			break;
+		case '3':
+			three(decimalPoint);
+			break;
+		case '4':
+			four(decimalPoint);
+			break;
+		case '5':
+			five(decimalPoint);
+			break;
+		case '6':
+			six(decimalPoint);
+			break;
+		case '7':
+			seven(decimalPoint);
+			break;
+		case '8':
+			eight(decimalPoint);
+			break;
+		case '9':
+			nine(decimalPoint);
+			break;
+		default:
+			zero(decimalPoint);
+			break;
+
+	}
 
 }
 
@@ -235,19 +352,6 @@ void SevenSegment::b(bool decimalPoint) {
 	digitalWrite(getPinE(), HIGH);
 	digitalWrite(getPinF(), HIGH);
 	digitalWrite(getPinG(), HIGH);
-	digitalWrite(getPinDP(), decimalPoint);
-
-}
-
-void SevenSegment::c(bool decimalPoint) {
-
-	digitalWrite(getPinA(), HIGH);
-	digitalWrite(getPinB(), LOW);
-	digitalWrite(getPinC(), LOW);
-	digitalWrite(getPinD(), HIGH);
-	digitalWrite(getPinE(), HIGH);
-	digitalWrite(getPinF(), HIGH);
-	digitalWrite(getPinG(), LOW);
 	digitalWrite(getPinDP(), decimalPoint);
 
 }

@@ -1,5 +1,5 @@
 #ifndef SevenSegment_H
-#define SeventSegment_H
+#define SevenSegment_H
 
 class SevenSegment {
 
@@ -50,7 +50,6 @@ class SevenSegment {
 		void setPinDigitFour(int value);
 		void setPinA(int value);
 		void setPinB(int value);
-		void setPinD(int value);
 		void setPinC(int value);
 		void setPinD(int value);
 		void setPinE(int value);
@@ -58,10 +57,12 @@ class SevenSegment {
 		void setPinG(int value);
 		void setPinDP(int value);
 
+		// Main display function
+		void display(int digit, char character, bool decimalPoint);
+
 		// Letters
 		void a(bool decimalPoint);
 		void b(bool decimalPoint);
-		void c(bool decimalPoint);
 		void c(bool decimalPoint);
 		void d(bool decimalPoint);
 		void e(bool decimalPoint);
