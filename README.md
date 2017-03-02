@@ -1,6 +1,8 @@
 # SevenSegment
 An Arduino library for the ATA8041AB 7-Segment display.
 
+<img src="https://github.com/stonepreston/SevenSegment/blob/master/Images/7-segment_display-4_digit(blue).png" width=300 />
+
 After importing the library, create an instance of SevenSegment:
 
 ```
