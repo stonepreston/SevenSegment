@@ -90,4 +90,5 @@ To display a character, simply call the display function and pass in the digit y
 
 ```
 seg.display(1, seg.A, true);
+
 ```
