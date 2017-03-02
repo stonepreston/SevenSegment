@@ -1,7 +1,7 @@
 # SevenSegment
 An Arduino library for the ATA8041AB 7-Segment display.
 
-To display a character, create an instance of SevenSegment:
+After importing the library, create an instance of SevenSegment:
 
 ```
 SevenSegment seg = SevenSegment();
