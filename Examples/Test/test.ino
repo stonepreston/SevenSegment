@@ -1,5 +1,4 @@
-#include "Arduino.h"
-#include "SevenSegment.h"
+#include <SevenSegment.h>
 
 // Create SevenSegment object using default pin configuration
 SevenSegment seg = SevenSegment();
