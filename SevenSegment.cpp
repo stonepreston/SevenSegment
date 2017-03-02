@@ -21,6 +21,11 @@ SevenSegment::SevenSegment() {
 	pinG = 11;
 	pinDP = 12;
 
+	// set pin modes
+	for (int i=1; i<=12; i++) {
+		pinMode(i, OUTPUT);
+	}
+
 }
 
 // Overloaded Constructor
@@ -39,6 +44,21 @@ SevenSegment::SevenSegment(int pinDigitOne, int pinDigitTwo, int pinDigitThree, 
 	this->pinF = pinF;
 	this->pinG = pinG;
 	this->pinDP = pinDP;
+
+	// set pin modes
+	pinMode(pinDigitOne, OUTPUT);
+	pinMode(pinDigitTwo, OUTPUT);
+	pinMode(pinDigitThree, OUTPUT);
+	pinMode(pinDigitFour, OUTPUT);
+	pinMode(pinA, OUTPUT);
+	pinMode(pinB, OUTPUT);
+	pinMode(pinC, OUTPUT);
+	pinMode(pinD, OUTPUT);
+	pinMode(pinE, OUTPUT);
+	pinMode(pinF, OUTPUT);
+	pinMode(pinG, OUTPUT);
+	pinMode(pinDP, OUTPUT);
+
 
 }
 

@@ -11,16 +11,12 @@ const SevenSegment::Character characters[]  = { seg.A, seg.B, seg.C, seg.D, seg.
 												seg.SIX, seg.SEVEN, seg.EIGHT, seg.NINE};
 
 
-//The setup function is called once at startup of the sketch
+
 void setup() {
-	// initialize output pins 1-12
-	for (int i = 1; i <= 12; i++) {
-		pinMode(i,OUTPUT);
-	}
+
 
 }
 
-// The loop function is called in an endless loop
 void loop() {
 
 	// Loop over each digit
