@@ -4,9 +4,12 @@
 // Create SevenSegment object using default pin configuration
 SevenSegment seg = SevenSegment();
 
-const char characters[]  = {'a', 'b', 'c', 'd', 'e', 'f', 'h', 'i', 'j',
-					  'l', 'n', 'o', 'p', 'r', 's', 'u', 'y', 'z',
-					  '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+const SevenSegment::Character characters[]  = { seg.A, seg.B, seg.C, seg.D, seg.E,
+												seg.F, seg.H, seg.I, seg.J, seg.L,
+												seg.N, seg.O, seg.P, seg.R, seg.S,
+												seg.U, seg.Y, seg.Z, seg.ZERO, seg.ONE,
+												seg.TWO, seg.THREE, seg.FOUR, seg.FIVE,
+												seg.SIX, seg.SEVEN, seg.EIGHT, seg.NINE};
 
 
 //The setup function is called once at startup of the sketch

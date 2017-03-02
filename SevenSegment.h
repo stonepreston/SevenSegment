@@ -3,11 +3,10 @@
 
 class SevenSegment {
 
-	///// Properties /////
 
-	// output pins
 	private:
 
+		// output pins
 		int pinA;
 		int pinB;
 		int pinC;
@@ -20,45 +19,6 @@ class SevenSegment {
 		int pinDigitTwo;
 		int pinDigitThree;
 		int pinDigitFour;
-
-	///// Methods /////
-
-	public:
-
-		// Constructors
-		SevenSegment();
-		SevenSegment(int pinDigitOne, int pinDigitTwo, int pinDigitThree, int pinDigitFour, int pinA, int pinB, int pinC, int pinD, int pinE, int pinF, int pinG, int pinDP);
-
-		// Getters
-		int getPinDigitOne();
-		int getPinDigitTwo();
-		int getPinDigitThree();
-		int getPinDigitFour();
-		int getPinA();
-		int getPinB();
-		int getPinC();
-		int getPinD();
-		int getPinE();
-		int getPinF();
-		int getPinG();
-		int getPinDP();
-
-		// Setters
-		void setPinDigitOne(int value);
-		void setPinDigitTwo(int value);
-		void setPinDigitThree(int value);
-		void setPinDigitFour(int value);
-		void setPinA(int value);
-		void setPinB(int value);
-		void setPinC(int value);
-		void setPinD(int value);
-		void setPinE(int value);
-		void setPinF(int value);
-		void setPinG(int value);
-		void setPinDP(int value);
-
-		// Main display function
-		void display(int digit, char character, bool decimalPoint);
 
 		// Letters
 		void a(bool decimalPoint);
@@ -100,6 +60,25 @@ class SevenSegment {
 		void digitTwo();
 		void digitThree();
 		void digitFour();
+
+	public:
+
+		enum Character {A ='a', B = 'b', C= 'c', D = 'd', E = 'e', F = 'f', H = 'h',
+						I = 'i', J = 'j', L = 'l', N = 'n', O = 'o', P = 'p', R = 'r',
+						S = 's', U = 'u', Y = 'y', Z = 'z',
+						ZERO = '0', ONE = '1', TWO = '2', THREE = '3', FOUR = '4',
+						FIVE = '5', SIX = '6', SEVEN = '7', EIGHT = '8', NINE='9'};
+
+		// Constructors
+		SevenSegment();
+		SevenSegment(int pinDigitOne, int pinDigitTwo, int pinDigitThree, int pinDigitFour, int pinA, int pinB, int pinC, int pinD, int pinE, int pinF, int pinG, int pinDP);
+
+		// Main display function
+		void display(int digit, Character c, bool decimalPoint);
+
+
+
+
 
 };
 

@@ -18,14 +18,14 @@ void setup()
 void loop()
 {
 	int dt = 1;
-	seg.display(1, 'c', true);
+	seg.display(1, seg.C, true);
 	delay(dt);
-	seg.display(2, 'o', false);
+	seg.display(2, seg.O, false);
 	delay(dt);
-	seg.display(3, 'o', false);
+	seg.display(3, seg.O, false);
 	delay(dt);
 	// Pass in true as the last argument of the display function to show the decimal point
-	seg.display(4, 'l', true);
+	seg.display(4, seg.L, true);
 	delay(dt);
 
 }
