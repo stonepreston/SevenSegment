@@ -17,13 +17,13 @@ The constructor asssumes a default pin configuration of
 | 2                   | D2            |
 | 3                   | D3            |
 | 4                   | D4            |
-| 5                   | a             |
-| 6                   | b             |
-| 7                   | c             |
-| 8                   | d             |
-| 9                   | e             |
-| 10                  | f             |
-| 11                  | g             |
+| 5                   | A             |
+| 6                   | B             |
+| 7                   | C             |
+| 8                   | D             |
+| 9                   | E             |
+| 10                  | F             |
+| 11                  | G             |
 | 12                  | DP            |
 
 You can specify a custom pin configuration using the overloaded constructor. The arguments are your arduino digital pin numbers. 
@@ -42,13 +42,13 @@ would correspond to a pin configuration of
 | 7                   | D2            |
 | 9                   | D3            |
 | 10                  | D4            |
-| 1                   | a             |
-| 2                   | b             |
-| 3                   | c             |
-| 4                   | d             |
-| 8                   | e             |
-| 6                   | f             |
-| 11                  | g             |
+| 1                   | A             |
+| 2                   | B             |
+| 3                   | C             |
+| 4                   | D             |
+| 8                   | E             |
+| 6                   | F             |
+| 11                  | G             |
 | 12                  | DP            |
 
 
